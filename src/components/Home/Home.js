@@ -15,7 +15,7 @@ const Home = () => {
 
     const headerImage = {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
-        backgroundPosition: 'center',
+        backgroundPosition: 'center'
     };
 
     const headerTitle = {

@@ -20,7 +20,7 @@ const TeamData = () => {
 
     const { strTeamBanner, strTeam, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strDescriptionDE, strFacebook, strTwitter, strYoutube } = teamDetails[0] || {};
 
-    const genderImage = strGender === 'Male' ? maleImg : femaleImg; // Due to data loading delay this code displays the image of female footballers first and then male footballers when strGender is equal to 'Male'.
+    const genderImage = strGender === 'Male' ? maleImg : femaleImg; //Conditional formatting used.
 
     return (
         <div className='container'>
