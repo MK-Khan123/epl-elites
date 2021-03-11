@@ -1,12 +1,10 @@
-.banner-image img {
+.home-banner img {
     width: 100%;
     height: 362px;
     object-fit: cover;
     object-position: 50% 50%;
 }
-.card-area {
-    display: grid;
-    grid-template-columns: (3, 1fr);
+.card-wrapper {
     margin-top: 45px;
-    margin-bottom: 170px;
+    padding-bottom: 170px;
 }

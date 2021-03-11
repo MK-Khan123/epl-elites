@@ -10,22 +10,24 @@ import TeamData from './components/TeamData/TeamData';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/team/:id">
-          <TeamData></TeamData>
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <NoMatch />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/team/:id">
+            <TeamData />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <NoMatch />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

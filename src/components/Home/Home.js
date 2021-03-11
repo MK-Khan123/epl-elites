@@ -12,12 +12,15 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setTeams(data.teams));
     }, []);
+    
     return (
-        <div>
-            <img src={image} alt="" />
-            <div className='card-area'>
+        <div className='container'>
+            <div className='home-banner'>
+                <img src={image} alt="" />
+            </div>
+            <div className='card-wrapper d-flex flex-wrap justify-content-around'>
                 {
-                   teams.map(team => <Teams key={team.idTeam} team={team}></Teams>)
+                    teams.map(team => <Teams key={team.idTeam} team={team}></Teams>)
                 }
             </div>
         </div>

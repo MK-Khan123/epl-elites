@@ -1,9 +1,10 @@
 import React from 'react';
+import './NoMatch.css';
 
 const NoMatch = () => {
     return (
-        <div>
-            <h3>404! Information not found</h3>
+        <div className='error-message'>
+            <h1>404! Information not found</h1>
         </div>
     );
 };

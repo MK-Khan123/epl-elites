@@ -1,0 +1,25 @@
+.teamDetails-card {
+    width: 442px;
+    height: 257px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+.teamDetails-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.banner-image img {
+    width: 100%;
+    height: 362px;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+.socialMedia-icon {
+    border-top: 1px solid lightgrey;
+    text-align: center;
+}
+.socialMedia-icon img {
+    width: 65px;
+    height: 65px;
+}
