@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './TeamData.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlag, faFutbol, faLandmark, faVenusMars } from '@fortawesome/free-solid-svg-icons';
 import maleImg from '../../images/male.png';
 import femaleImg from '../../images/female.png';
 import twitter from '../../images/twitter.png';
@@ -31,19 +33,19 @@ const TeamData = () => {
             </div>
             
             {/* Card Area Starts */}
-            <div className="card mb-3" style={{ maxWidth: "1170px" }}>
+            <div className="card mb-3 mt-3 teamInfo-area" style={{ maxWidth: "1170px" }}>
                 <div className="row g-0">
                     <div className="col-md-7">
-                        <div className="card-body">
-                            <h2 className="card-title">{strTeam}</h2>
-                            <p className="card-text">Founded: {intFormedYear}</p>
-                            <p className="card-text">Country: {strCountry}</p>
-                            <p className="card-text">Sport Type: {strSport}</p>
-                            <p className="card-text">Gender: {strGender}</p>
+                        <div className="card-body ps-4">
+                            <h2 className="card-title mb-5">{strTeam}</h2>
+                            <p className="card-text"><FontAwesomeIcon icon={faLandmark} /> Founded: {intFormedYear}</p>
+                            <p className="card-text"><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
+                            <p className="card-text"><FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}</p>
+                            <p className="card-text"><FontAwesomeIcon icon={faVenusMars} /> Gender: {strGender}</p>
                         </div>
                     </div>
                     {/* Dynamic Gender Image based on Gender */}
-                    <div className="col-md-5 teamDetails-card">
+                    <div className="col-md-5 club-gender">
                         <img src={genderImage} alt="..." />
                     </div>
                 </div>
@@ -52,7 +54,7 @@ const TeamData = () => {
 
             {/* 2 Descriptions provided */}
             <div>
-                <p>{strDescriptionEN}</p>
+                <p style={{padding:'10px 0px 20px 0px'}}>{strDescriptionEN}</p>
                 <p>{strDescriptionDE}</p>
             </div>
 

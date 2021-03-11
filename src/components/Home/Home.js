@@ -12,11 +12,21 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setTeams(data.teams));
     }, []);
+
+    const headerImage = { 
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`, 
+        backgroundPosition: 'center', };
     
+    const headerTitle = { 
+        padding: '100px', 
+        textAlign: 'center', 
+        color: 'white' };
+
     return (
         <div className='container'>
-            <div className='home-banner'>
-                <img src={image} alt="" />
+            <div style={headerImage} className='home-banner'>
+                <h1 style={headerTitle}>English Premiere League Elites</h1>
+                {/* <img src={image} alt="" /> */}
             </div>
             <div className='card-wrapper d-flex flex-wrap justify-content-around'>
                 {

@@ -1,22 +1,26 @@
-.teamDetails-card {
+.teamInfo-area {
+    border-radius: 15px;
+    background-color: #434343;
+    color: white;
+}
+.club-gender {
     width: 442px;
     height: 257px;
     margin-top: 10px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
-.teamDetails-card img {
+.club-gender img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 .banner-image img {
     width: 100%;
-    height: 362px;
+    height: 100%;
     object-fit: contain;
-    object-position: 50% 50%;
 }
 .socialMedia-icon {
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid slategray;
     text-align: center;
 }
 .socialMedia-icon img {

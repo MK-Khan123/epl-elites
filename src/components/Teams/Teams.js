@@ -14,7 +14,7 @@ const Teams = (props) => {
     }
 
     return (
-        <div className="card card-gap" style={{ width: "18rem" }}>
+        <div className="card card-gap" style={{ width: "18rem", borderRadius:'10px' }}>
             <img src={strTeamBadge} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h4 className="card-title">{strTeam}</h4>
