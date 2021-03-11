@@ -52,8 +52,8 @@ const TeamData = () => {
 
             {/* 2 Descriptions provided */}
             <div>
-                <p style={{ padding: '10px 0px 20px 0px' }}>{strDescriptionEN}</p>
-                <p>{strDescriptionDE}</p>
+                <p style={{ padding: '10px 0px 20px 0px', color: 'white' }}>{strDescriptionEN}</p>
+                <p style={{ color: 'white' }}>{strDescriptionDE}</p>
             </div>
 
             {/* Social Media Dynamic Icons using Font Awesome Icons*/}
