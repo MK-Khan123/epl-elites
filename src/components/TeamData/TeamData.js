@@ -3,11 +3,9 @@ import { useParams } from 'react-router';
 import './TeamData.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faFutbol, faLandmark, faVenusMars } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import maleImg from '../../images/male.png';
 import femaleImg from '../../images/female.png';
-import twitter from '../../images/twitter.png';
-import facebook from '../../images/facebook.png';
-import youtube from '../../images/youtube.png';
 
 const TeamData = () => {
     const { id } = useParams();
@@ -31,7 +29,7 @@ const TeamData = () => {
             <div className='banner-image'>
                 <img src={strTeamBanner} alt="" />
             </div>
-            
+
             {/* Card Area Starts */}
             <div className="card mb-3 mt-3 teamInfo-area" style={{ maxWidth: "1170px" }}>
                 <div className="row g-0">
@@ -54,23 +52,30 @@ const TeamData = () => {
 
             {/* 2 Descriptions provided */}
             <div>
-                <p style={{padding:'10px 0px 20px 0px'}}>{strDescriptionEN}</p>
+                <p style={{ padding: '10px 0px 20px 0px' }}>{strDescriptionEN}</p>
                 <p>{strDescriptionDE}</p>
             </div>
 
-            {/* Social Media Buttons */}
-            <div className='socialMedia-icon'>
-                <a href={`https://${strTwitter}`} target="_blank" rel="noopener noreferrer">
-                    <img src={twitter} alt=""/>
-                </a>
-                <a href={`https://${strFacebook}`} target="_blank" rel="noopener noreferrer">
-                    <img src={facebook} alt=""/>
-                </a>
-                <a href={`https://${strYoutube}`} target="_blank" rel="noopener noreferrer">
-                    <img src={youtube} alt=""/>
-                </a>
+            {/* Social Media Dynamic Icons using Font Awesome Icons*/}
+            <div className='socialMedia-icon d-flex justify-content-center'>
+                <div style={{ padding: '10px 20px 10px 20px' }}>
+                    <a href={`https://${strTwitter}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faTwitterSquare} size='3x' />
+                    </a>
+                </div>
+                <div style={{ padding: '10px 20px 10px 20px' }}>
+                    <a href={`https://${strFacebook}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faFacebookSquare} size='3x' />
+                    </a>
+                </div>
+                <div style={{ padding: '10px 20px 10px 20px' }}>
+                    <a href={`https://${strYoutube}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faYoutubeSquare} size='3x' />
+                    </a>
+                </div>
             </div>
-        </div>
+
+        </div >
     );
 };
 
