@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import './Teams.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,12 +13,18 @@ const Teams = (props) => {
     }
 
     return (
-        <div className="card card-gap" style={{ width: "18rem", borderRadius: '10px' }}>
-            <img src={strTeamBadge} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h4 className="card-title">{strTeam}</h4>
-                <p className="card-text">Sports Type: {strSport}</p>
-                <button onClick={() => handleClick(idTeam)} className="btn btn-danger">Explore <FontAwesomeIcon icon={faArrowRight} /></button>
+        <div className="col d-flex justify-content-center">
+            <div className="card rounded-5" style={{ width: "16rem" }}>
+                <img src={strTeamBadge} className="card-img-top" alt="..." />
+                <div className="card-body text-center">
+                    <h4 className="card-title">{strTeam}</h4>
+                    <p className="card-text">Sports Type: {strSport}</p>
+                    <button
+                        onClick={() => handleClick(idTeam)}
+                        className="btn btn-danger">
+                        Explore <FontAwesomeIcon icon={faArrowRight} />
+                    </button>
+                </div>
             </div>
         </div>
     );
